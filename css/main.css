@@ -10,6 +10,15 @@
     --primary-green: #014E56;
     --livvic: "Livvic";
     --secondary-pink: #F67E7E;
+    --primary-midnight-green: #014E56;
+    --primary-light-coral: #F67E7E;
+    --primary-white: #FFF;
+    --secondary-rapture-blue: #79C8C7;
+    --secondary-police-blue: #2C6269;
+    --secondary-deep-jungle-green: #004047;
+    --secondary-sacramento-state-green: #012F34;
+    --secobdary-dark-green: #002529;
+    --livvic: 'Livvic';
 
 }
 
@@ -134,3 +143,260 @@ a {
     background: #79C8C7;
     margin-bottom: 79px;
 }
+
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: unset;
+}
+
+body {
+    font-family: var(--livvic);
+}
+
+.all-btn {
+    color: var(--primary-white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 11px 33px;
+    border-radius: 24px;
+    border: 2px solid var(--primary-white);
+}
+
+.container {
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+/* GLOBAL STYLES */
+.about-site-header-hero {
+    background-color: var(--primary-midnight-green);
+}
+
+.about-site-header {
+    display: flex;
+    padding-top: 77px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.about-header-list {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+
+}
+
+.about-header-link {
+    color: var(--primary-white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    transition: .5s;
+}
+
+.about-header-link:hover {
+    color: var(--primary-white);
+}
+
+.about-header-link:active {
+    color: var(--primary-light-coral);
+}
+
+.about-header-btn {
+    transition: .5s;
+}
+
+.about-header-btn:hover {
+    color: var(--primary-white);
+}
+
+.about-header-btn:active {
+    color: var(--secobdary-dark-green);
+    background: var(--primary-white);
+}
+
+/* HERO */
+.about-site-hero {
+    display: flex;
+    padding-top: 124px;
+    padding-bottom: 120px;
+    align-items: center;
+}
+
+.about-site-hero-title {
+    color: var(--primary-white);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.about-site-hero-desc {
+    color: var(--primary-white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-left: 144px;
+    padding-top: 40px;
+}
+
+.about-site-hero-desc::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary-light-coral);
+    margin-bottom: 40px;
+}
+
+
+/* CLIENTS */
+.clients {
+    background: var(--secondary-sacramento-state-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 151px;
+}
+
+.clients-title {
+    color: var(--primary-white);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.clients-list-image {
+    width: 165px;
+    height: 28px;
+}
+
+.gadgets {
+    width: 98px;
+    height: 45px;
+}
+
+/* CLIENTS */
+
+/* GET STARTED */
+.get-started {
+    background-color: var(--primary-light-coral);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 76px;
+    padding-bottom: 76px;
+}
+
+.get-started-title {
+    color: var(--secondary-sacramento-state-green);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.get-started-btn {
+    color: var(--secondary-sacramento-state-green);
+    border: 2px solid var(--secondary-sacramento-state-green);
+    transition: .5s;
+}
+
+.get-started-btn:active {
+    color: var(--primary-white);
+    background: var(--secondary-sacramento-state-green);
+}
+
+/* GET STARTED */
+
+/* FOOTER */
+.site-footer {
+    padding-left: 165px;
+    padding-right: 165px;
+    background: var(--secobdary-dark-green);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.footer-list {
+    display: flex;
+    column-gap: 40px;
+    padding-top: 25px;
+}
+
+.footer-link {
+    color: var(--primary-white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    transition: .5s;
+}
+
+.footer-link:hover{
+    color: var(--primary-white);
+}
+
+.footer-link:active{
+    color: var(--primary-light-coral);
+}
+
+.footer-desc {
+    color: var(--primary-white);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+    padding-left: 125px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.footer-second-list {
+    display: flex;
+    column-gap: 20px;
+}
+
+.second-footer-desc {
+    color: var(--primary-white);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+}
+
+/* FOOTER */
