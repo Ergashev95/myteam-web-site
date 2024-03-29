@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: var(--livvic);
+    /* font-family: var(--livvic); */
 }
 
 ul {
@@ -133,4 +133,160 @@ a {
     height: 4px;
     background: #79C8C7;
     margin-bottom: 79px;
+}
+
+/* SITE MAIN index.html */
+
+.site-main {
+    width: 100%;
+    width: 100%;
+}
+
+.offers {
+    display: flex;
+    background: #012F34;
+    width: 100%;
+    padding: 198px 165px;
+    column-gap: 125px;
+}
+
+.offer-title__text {
+    max-width: 445px;
+    width: 100%;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.offer-title__text::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #F67E7E;
+    margin-bottom: 54px;
+}
+
+.offer-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.offer-img {
+    width: 72px;
+    height: 72px;
+}
+
+.offer {
+    display: flex;
+    column-gap: 23px;
+}
+
+.offer-title {
+    color: var(--secondary-pink);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.offer-desc {
+    max-width: 445px;
+    width: 100%;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.8;
+}
+
+.offer-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.service {
+    width: 100%;
+    padding: 140px 0px;
+    background: #004047;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-title {
+    max-width: 932px;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.title-span {
+    color: #79C8C7;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.service-cards {
+    margin-top: 56px;
+    display: flex;
+    width: 100%;
+    padding: 0px 165px;
+    column-gap: 30px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card-text {
+    max-width: 350px;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 24px;
+    z-index: 1;
+    padding-top: 36px;
+}
+
+.author {
+    color: #79C8C7;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.author-desc {
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.author-img {
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+    border: 2px solid #C4FFFE;
+}
+
+.card-back-img{
+    position: absolute;
+    top: 0;
+    z-index: 0;
 }
