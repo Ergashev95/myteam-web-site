@@ -15,6 +15,7 @@
 
 body {
     /* font-family: var(--livvic); */
+    overflow-x: hidden;
 }
 
 ul {
@@ -29,6 +30,20 @@ a {
     background-color: var(--primary-green);
     width: 100%;
     padding: 77px 0;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    top: 250px;
+    z-index: 0;
+    left: -110px;
+}
+
+.bg1{
+    position: absolute;
+    bottom: -68px;
+    right: 165px;
 }
 
 .site-header-hero {
@@ -148,6 +163,13 @@ a {
     width: 100%;
     padding: 198px 165px;
     column-gap: 125px;
+    position: relative;
+}
+
+.bg2{
+    position: absolute;
+    right: -100px;
+    bottom: 0;
 }
 
 .offer-title__text {
@@ -215,8 +237,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
+.bg3{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg4{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
 .service-title {
     max-width: 932px;
     width: 100%;
@@ -285,8 +319,95 @@ a {
     border: 2px solid #C4FFFE;
 }
 
-.card-back-img{
+.card-back-img {
     position: absolute;
     top: 0;
     z-index: 0;
+}
+
+.contact {
+    padding: 76px 263px;
+    background: var(--secondary-pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bg5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.contact-title {
+    color: var(--primary-green);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.contact-btn {
+    padding: 9px 33px;
+    color: var(--primary-green);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    border-radius: 24px;
+    border: 2px solid var(--primary-green);
+    transition: .5s;
+}
+
+.contact-btn:hover {
+    background-color: var(--primary-green);
+    color: #FFF;
+}
+
+.site-footer {
+    padding: 48px 165px;
+    background: #002529;
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+}
+
+.footer-about {
+    margin-left: 125px;
+    width: 445px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    row-gap: 51px;
+}
+
+.icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-text {
+    color: #FFF;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: .6;
 }
