@@ -1,3 +1,6 @@
 @media(max-width:768px){
-    
+    body{
+        overflow-x: hidden;
+        width: 768px;
+    }
 }
